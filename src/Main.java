@@ -13,7 +13,7 @@ public class Main {
             int maxNumber = scanner.nextInt();
 
             if (maxNumber < 1 || maxNumber > 50) {
-                throw new IllegalArgumentException("入力は1から50の間でなければなりません。");
+                throw new IllegalArgumentException("入力は1から50の間でなければなりません");
             }
 
             List<Integer> numbers = IntStream.rangeClosed(1, maxNumber)
