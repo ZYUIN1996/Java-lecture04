@@ -2,7 +2,6 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
@@ -20,7 +19,7 @@ public class Main {
                     .map(n -> n * 2)
                     .filter(n -> n % 5 == 2)
                     .boxed()
-                    .collect(Collectors.toList());
+                    .toList();
 
             System.out.println("選ばれた数字: " + numbers);
         } catch (InputMismatchException e) {
