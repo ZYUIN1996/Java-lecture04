@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.println("1から50までの数字を入力してください: ");
+            System.out.println("このプログラムは１～５０の中から選んだ数字以下の数字に対して２をかけて５で割った余りが２のものを抽出するプログラムです。数字を入力してください: ");
             int maxNumber = scanner.nextInt();
 
             if (maxNumber < 1 || maxNumber > 50) {
